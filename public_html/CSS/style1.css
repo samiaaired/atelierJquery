@@ -1,0 +1,20 @@
+.rouge{
+   background-color: red; 
+}
+.vert{
+    background-color: green;
+}
+.jaune{
+    background-color: yellow;
+}
+
+.ligne_pair{
+    background-color: aquamarine;
+}
+.ligne_impair{
+    background-color: dodgerblue;
+}
+.ligne_clic{
+    background-color: orange;
+    font-size: 28px;
+}

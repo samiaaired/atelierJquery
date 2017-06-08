@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/style1.css" rel="stylesheet" type="text/css"/>
+        <script src="JS/jquery-3.2.1.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="d1" class="rouge">TODO write content</div>
+        <div id="d2" class="vert">TODO write content</div>
+        <div id="d3" class="jaune">TODO write content</div>
+        
+        
+        <table >
+            <tr>
+                <td> un</td>
+            </tr>
+            <tr>
+               <td>deux</td> 
+            </tr>
+            <tr>
+              <td>trois</td>  
+            </tr> 
+            <tr>
+               <td>Quatre</td> 
+            </tr>    
+            <tr>
+                 <td>Cinq</td>
+            </tr>
+            <tr>
+                <td>Six</td>
+            </tr>
+            <tr>
+                 <td>Sept</td>
+            </tr>  
+            <tr>
+                 <td>Huit</td>
+            </tr>
+               
+            <tr>
+                 <td>Neuf</td>
+            </tr>
+              <tr>
+                 <td>Dix</td>
+            </tr>
+           
+        </table>
+        <script type="text/javascript">
+            function onClick(e){
+              $(e.target).hide();
+            }
+            
+            $('div').click(onClick);
+            
+            //tableau
+            
+            function clickLigne(e){
+                $(e.target).toggleClass('ligne_clic');
+            }
+            
+            $('tr:even').addClass("ligne_pair");
+            $('tr:odd').addClass("ligne_impair");
+            $('tr').click(clickLigne);
+        </script>
+        
+    </body>
+</html>

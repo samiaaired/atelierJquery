@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/style1.css" rel="stylesheet" type="text/css"/>
+        <script src="JS/jquery-3.2.1.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <form>
+            <label> Kilos perdus par jour </label>
+            <input name="kgPerdus" type="number" min="-5" max="5"/>
+            <br>
+            <label> Nombre de jour de ramadan</label>
+            <input name="nbreJour" type="number" min="29" max="30"/>
+            <br>
+           
+            <input type="button" value="Calculer"/> 
+        </form>
+        
+        <label> Le resultat </label>
+        
+        <input name="res"  value="/" disabled="disabled">
+        <script type="text/javascript">
+            
+            
+            function calculer(){
+                var x =parseInt($('input[name=kgPerdus]').val());
+                var y= parseInt($('input[name=nbreJour]').val());
+                
+                var nbrKilos = x*y;
+                   $('input[name=res]').val(nbrKilos);
+            }
+          
+            $('input[type=button]').click(calculer);
+        </script>
+        
+    </body>
+</html>
